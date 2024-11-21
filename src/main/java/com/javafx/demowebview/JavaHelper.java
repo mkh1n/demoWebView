@@ -16,7 +16,7 @@ public class JavaHelper {
     public void openStage(String id) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SecondController.class.getResource("second.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(), 200, 200);
+        Scene scene = new Scene(fxmlLoader.load(), 480, 480);
         Stage stage = new Stage();
         stage.setTitle("Second");
         stage.setScene(scene);
