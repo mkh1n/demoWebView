@@ -22,6 +22,11 @@
     </div>
 </template>
 <script>
+    function ready () {
+        alert("command:ready");
+    }
+
+    ready();
     const suppliers = [
         {
             "id": 1,
@@ -69,9 +74,11 @@
 
 
     function add (event) {        
-        const atr = event.currentTarget.getAttribute("data-attr");
-        jHelper.debuger(atr);
-        jHelper.openStage(atr);
+        const id = event.currentTarget.getAttribute("data-attr");
+        const type = event.currentTarget.querySelector(".type").textContent;
+        //console.log(type);
+        jHelper.debuger(id);
+        jHelper.openStage(id, type);
         
 
     }

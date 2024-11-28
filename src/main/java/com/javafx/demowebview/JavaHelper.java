@@ -13,7 +13,7 @@ import javafx.stage.WindowEvent;
 import java.io.IOException;
 
 public class JavaHelper {
-    public void openStage(String id) throws IOException {
+    public void openStage(String id, String type) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SecondController.class.getResource("second.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 480, 480);
@@ -39,7 +39,7 @@ public class JavaHelper {
 //            }
 //        });
         SecondController secondController = fxmlLoader.getController();
-        secondController.loadData(id);
+        secondController.loadData(id, type);
         stage.show();
 
 

@@ -16,8 +16,9 @@ public class SecondController {
     @FXML
     private MenuItem menuItem3;
 
-    protected void loadData (String id) {
+    protected void loadData (String id, String type) {
         sLabel.setText(id);
+        mbType.setText(type);
     }
 
     @FXML
