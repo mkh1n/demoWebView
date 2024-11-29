@@ -16,9 +16,20 @@ public class SecondController {
     @FXML
     private MenuItem menuItem3;
 
-    protected void loadData (String id, String type) {
+    protected void loadData (String id) {
         sLabel.setText(id);
-        mbType.setText(type);
+        System.out.println("Запрос к БД по id " + id);
+        Suppliers suppliers = new Suppliers(1, "OOO", "Луговой", "88005553535",
+                "10", "Universe");
+        sLabel.setText(suppliers.getName());
+
+    }
+
+    @FXML
+    protected void saveData () {
+        String name = sLabel.getText();
+        // Suppliers suppliers = new Suppliers();
+        System.out.println("Пользователь с идентификатором " + sLabel + " обновлен");
     }
 
     @FXML

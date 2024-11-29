@@ -13,7 +13,7 @@ import javafx.stage.WindowEvent;
 import java.io.IOException;
 
 public class JavaHelper {
-    public void openStage(String id, String type) throws IOException {
+    public void openStage(String id) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SecondController.class.getResource("second.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 480, 480);
@@ -32,14 +32,14 @@ public class JavaHelper {
 //                    windowEvent.consume();
 //                } else if (result == ButtonType.OK) {
 //                    System.out.println("Save to DB.... =)))");
-//                    HelloController helloController = new HelloController();
-//                    helloController.reloadHandlers();
+////                    HelloController helloController = new HelloController();
+////                    helloController.reloadHandlers();
 //                }
 //                System.out.println(result);
 //            }
 //        });
         SecondController secondController = fxmlLoader.getController();
-        secondController.loadData(id, type);
+        secondController.loadData(id);
         stage.show();
 
 
