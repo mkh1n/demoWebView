@@ -12,5 +12,5 @@
    <WebView fx:id="webView" prefHeight="640.0" prefWidth="480.0" />
 
     <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" style="-fx-border-color: black; -fx-background-color: rgba(0,0,0,0);" text="Hello!" />
+    <Button onAction="#onHelloButtonClick" style="-fx-border-color: black; -fx-background-color: rgba(0,0,0,0);" text="Добаваить поставщика" />
 </VBox>

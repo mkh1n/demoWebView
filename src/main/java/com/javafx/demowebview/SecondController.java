@@ -18,6 +18,7 @@ public class SecondController {
 
     protected void loadData (String id) {
         sLabel.setText(id);
+        // SELECT * FROM SUPPLIERS WHERE ID = {ID};
         System.out.println("Запрос к БД по id " + id);
         Suppliers suppliers = new Suppliers(1, "OOO", "Луговой", "88005553535",
                 "10", "Universe");
@@ -30,6 +31,11 @@ public class SecondController {
         String name = sLabel.getText();
         // Suppliers suppliers = new Suppliers();
         System.out.println("Пользователь с идентификатором " + sLabel + " обновлен");
+        SuppliersDAO sd = new SuppliersDAO();
+//        sd.connect();
+//        sd.updateSuppliers();
+//        sd.disconnect();
+        // UPDATE or CREATE  в зависимости от наличия id
     }
 
     @FXML

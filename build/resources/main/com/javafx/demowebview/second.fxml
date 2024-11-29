@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.demowebview.SecondController">
+
+   <Label fx:id="sLabel" text="Label" />
+   <MenuButton fx:id="mbType" mnemonicParsing="false" text="Выбери тип организации...">
+      <items>
+         <MenuItem fx:id="menuItem3" mnemonicParsing="false" text="ПАО" />
+      </items>
+   </MenuButton>
+   <Label text="Наименование партнера" />
+   <TextField />
+   <Button mnemonicParsing="false" onAction="#saveData" text="Сохранить" />
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+
+</VBox>

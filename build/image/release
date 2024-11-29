@@ -1,0 +1,2 @@
+JAVA_VERSION="21.0.2"
+MODULES="java.base java.datatransfer java.xml java.prefs java.desktop javafx.base jdk.unsupported javafx.graphics javafx.controls java.scripting javafx.fxml java.net.http javafx.media jdk.jsobject jdk.xml.dom javafx.web java.logging org.controlsfx.controls com.javafx.demowebview com.javafx.merged.module"
